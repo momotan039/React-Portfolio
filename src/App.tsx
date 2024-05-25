@@ -1,33 +1,69 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 import './App.css'
+import Header from './components/Header'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const onLoadApp=()=>{
+    let selectedItem:Element|null
 
+window.onload=()=>{
+    selectedItem=document.querySelector('#main-menu ul a') 
+    const offsetSkill=(document.querySelector("#skills") as HTMLElement).offsetHeight
+    window.onscroll=()=>{
+        if(window.scrollY>offsetSkill)
+            startSkillAnimation()
+    }
+
+    selectItemFromMenu()
+    handelArrowButton()
+}
+
+function startSkillAnimation(){
+    const spans=document.querySelectorAll("#skills .skill")
+    spans.forEach(s=>{
+        s.classList.add('fill')
+    })
+}
+
+function selectItemFromMenu(){
+    const menu=document.querySelector('#main-menu ul')   
+    selectedItem?.classList.add('selected')
+    menu?.childNodes.forEach(item=>{
+        item.addEventListener('click',()=>{
+            selectedItem?.classList.remove('selected')
+            const _item=item as Element
+            _item.classList.add('selected')
+            selectedItem=_item
+        })
+    })
+}
+
+function handelArrowButton(){
+    document.querySelectorAll('.arrowsLink').forEach(arrow=>{
+        arrow.addEventListener('click',()=>{
+           const idContainer=arrow.getAttribute('href')
+          const itemMenu=document.querySelector(`nav ul a[href='${idContainer}']`)
+          selectedItem?.classList.remove('selected')
+          itemMenu?.classList.add('selected')
+          selectedItem=itemMenu
+        })
+    })
+}
+  }
+ useEffect(()=>{
+ onLoadApp()
+ },[])
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </>
   )
 }
