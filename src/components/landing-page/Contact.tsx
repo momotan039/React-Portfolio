@@ -12,14 +12,10 @@ function Contact() {
                   <h1 className="title">Contanct Me</h1>
                   <div className="parent">
                     <div className="keep-in-touch">
-                        <h1>Get in touch</h1>
+                        <h1>Get in touch via mail</h1>
                         <form onSubmit={sendMail}>
-                            <div className="top">
-                                <input required placeholder="FirstName" type="text"/>
-                                <input required placeholder="LastName" type="text"/>
-                            </div>
                             <div className="center">
-                                <input required type="email" id="email" placeholder="Email"/>
+                                <input disabled  type="email" id="email" placeholder="Email" value={'momotaha039@gmail.com'}/>
                             </div>
                             <div className="center">
                                 <input required id="subject" placeholder="Subject" type="text"/>
