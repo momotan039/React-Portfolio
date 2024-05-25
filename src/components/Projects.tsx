@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Projects() {
 type ProjectType={
     title: string;
