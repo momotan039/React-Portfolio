@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 function About() {
 function changeRoleCharacters(){
     const roleElem=document.querySelector('#about .role')
@@ -60,7 +60,7 @@ useEffect(() => {
                 growth fuels my ability to tackle complex challenges. Moreover, I excel in collaborative environments, 
                 leveraging my team player mindset to drive success and support the mission of your innovative firm.
             </p>
-            <a className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
+            <a className="btn" href="/'cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
         </div>
     </div>
     {/* <ArrowLinks elementId='#skills'/> */}

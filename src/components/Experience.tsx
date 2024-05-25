@@ -1,4 +1,3 @@
-import React from 'react'
 import WorkTimeLine, { JobType } from './WorkTimeLine';
 
 function Experience() {
