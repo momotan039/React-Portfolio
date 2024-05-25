@@ -6,6 +6,8 @@ import Skills from './components/landing-page/Skills'
 import Projects from './components/landing-page/Projects'
 import Contact from './components/landing-page/Contact'
 import Experience from './components/landing-page/Experience'
+import Testimonials from './components/landing-page/Testimonials'
+import Services from './components/landing-page/Services'
 
 function App() {
   const onLoadApp=()=>{
@@ -85,8 +87,10 @@ function changeSelectedItemWhileScrolling(){
       <Header/>
       <About/>
       <Experience/>
+      <Testimonials/>
       <Skills/>
       <Projects/>
+      <Services/>
       <Contact/>
     </>
   )
