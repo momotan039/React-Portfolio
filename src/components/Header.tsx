@@ -13,11 +13,18 @@ function Header() {
                     <a onClick={()=>SetShowMobileMenu(false)} href="#experience">
                         <li>Experience</li>
                     </a>
+                    <a onClick={()=>SetShowMobileMenu(false)} href="#testimonials">
+                        <li>Testimonials</li>
+                    </a>
                     <a onClick={()=>SetShowMobileMenu(false)} href="#skills">
                         <li>Skills</li>
                     </a>
                     <a onClick={()=>SetShowMobileMenu(false)} href="#projects">
                         <li>Projects</li>
+                    </a>
+                    
+                    <a onClick={()=>SetShowMobileMenu(false)} href="#services">
+                        <li>Services</li>
                     </a>
                     <a onClick={()=>SetShowMobileMenu(false)} href="#contact">
                         <li>Contact</li>
