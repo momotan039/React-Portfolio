@@ -1,4 +1,4 @@
-import WorkTimeLine, { JobType } from './WorkTimeLine';
+import WorkTimeLine, { JobType } from '../WorkTimeLine';
 
 function Experience() {
   const jobs: JobType[] = [

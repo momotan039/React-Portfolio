@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Experience from './components/Experience'
+import About from './components/landing-page/About'
+import Skills from './components/landing-page/Skills'
+import Projects from './components/landing-page/Projects'
+import Contact from './components/landing-page/Contact'
+import Experience from './components/landing-page/Experience'
 
 function App() {
   const onLoadApp=()=>{
