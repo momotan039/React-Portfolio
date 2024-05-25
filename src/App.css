@@ -588,6 +588,12 @@ color: var(--main-color);
 
 .contact-section .parent .contacts a {
     color: white;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    padding: 10px;
+}
+.contact-section .parent .contacts a:hover {
+    background:linear-gradient(45deg, var(--main-color), transparent);
 }
 
 .contact-section .parent .contacts a svg {
