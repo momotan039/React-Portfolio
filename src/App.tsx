@@ -14,12 +14,14 @@ window.onload=()=>{
     selectedItem=document.querySelector('#main-menu ul a') 
     const offsetSkill=(document.querySelector("#skills") as HTMLElement).offsetHeight
     window.onscroll=()=>{
+    changeSelectedItemWhileScrolling()
+
         if(window.scrollY>offsetSkill)
             startSkillAnimation()
     }
 
     selectItemFromMenu()
-    handelArrowButton()
+    // handelArrowButton()
 }
 
 function startSkillAnimation(){
@@ -41,18 +43,38 @@ function selectItemFromMenu(){
         })
     })
 }
+function changeSelectedItemWhileScrolling(){
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    let currentSection:string|null;
 
-function handelArrowButton(){
-    document.querySelectorAll('.arrowsLink').forEach(arrow=>{
-        arrow.addEventListener('click',()=>{
-           const idContainer=arrow.getAttribute('href')
-          const itemMenu=document.querySelector(`nav ul a[href='${idContainer}']`)
-          selectedItem?.classList.remove('selected')
-          itemMenu?.classList.add('selected')
-          selectedItem=itemMenu
-        })
-    })
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('selected');
+      if (link.getAttribute('href') === '#' + currentSection) {
+        link.classList.add('selected');
+      }
+    });
 }
+
+// function handelArrowButton(){
+//     document.querySelectorAll('.arrowsLink').forEach(arrow=>{
+//         arrow.addEventListener('click',()=>{
+//            const idContainer=arrow.getAttribute('href')
+//           const itemMenu=document.querySelector(`nav ul a[href='${idContainer}']`)
+//           selectedItem?.classList.remove('selected')
+//           itemMenu?.classList.add('selected')
+//           selectedItem=itemMenu
+//         })
+//     })
+// }
   }
  useEffect(()=>{
  onLoadApp()
