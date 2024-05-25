@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Experience from './Experience';
 function About() {
 function changeRoleCharacters(){
     const roleElem=document.querySelector('#about .role')

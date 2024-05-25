@@ -10,6 +10,9 @@ function Header() {
                     <a onClick={()=>SetShowMobileMenu(false)} href="#about">
                         <li>About</li>
                     </a>
+                    <a onClick={()=>SetShowMobileMenu(false)} href="#experience">
+                        <li>Experience</li>
+                    </a>
                     <a onClick={()=>SetShowMobileMenu(false)} href="#skills">
                         <li>Skills</li>
                     </a>

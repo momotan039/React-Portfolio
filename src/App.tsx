@@ -5,6 +5,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Experience from './components/Experience'
 
 function App() {
   const onLoadApp=()=>{
@@ -83,6 +84,7 @@ function changeSelectedItemWhileScrolling(){
     <>
       <Header/>
       <About/>
+      <Experience/>
       <Skills/>
       <Projects/>
       <Contact/>
