@@ -17,7 +17,7 @@ function WorkTimeLine({job}:JobProp) {
       <i className="fas fa-briefcase"></i>
     </div>
     <div className="card">
-      <h3><i className="fa-solid fa-briefcase"></i>{job.title}</h3>
+      <h3><i className="fa-solid fa-briefcase"></i><span className="title-job">{job.title}</span></h3>
       <h3 className='year'>
         <i className="fas fa-calendar-alt"></i>
         <span className='year'>{job.year}</span>
