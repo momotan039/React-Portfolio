@@ -51,7 +51,7 @@ useEffect(() => {
             <h1>
                 Hi 👋 I am <span>Mohammed </span>
                 A <span className="role">Full Stack</span>
-                <span>Developer</span>
+                <span> Developer</span>
             </h1>
             <p>
                 I am an efficient self-learner with a positive attitude, motivated to 
