@@ -256,7 +256,7 @@ body section h1.title {
     font-size: 1.2rem;
 
 }
-.home-section .parent .right h1 span{
+.home-section .parent .right h1 span:not(:last-child){
     color: var(--main-color);
 }
 .home-section .parent .right p {
