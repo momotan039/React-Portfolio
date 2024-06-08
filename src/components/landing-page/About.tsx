@@ -6,7 +6,7 @@ function changeRoleCharacters(){
     let role: string;
     let roleKey=0
     const chooseRole=()=>{
-        if(roleKey==roles.length-1)
+        if(roleKey==roles.length)
         roleKey=0
         return roles[roleKey++]
     }
