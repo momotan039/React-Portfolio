@@ -16,7 +16,8 @@ function SkillBox({skillsBox}:{children?:ReactNode,skillsBox:skillBoxType}) {
           <h1><i className="fas fa-mobile-alt"></i>{skillsBox.term}</h1>
           {
             skillsBox.skills.map(skill => {
-                return <span className="skill"><span className="percent">100%</span>
+                return <span className="skill">
+                  {/* <span className="percent">100%</span> */}
                             {skill.faIconClass&&<i className={skill.faIconClass}></i>}
                             {skill.image&&<img width="38px" height="38px" src={skill.image}/>}
                             {skill.title}
