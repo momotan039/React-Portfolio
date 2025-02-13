@@ -6,17 +6,17 @@ export interface JobType {
     skills: string[];
   }
 interface JobProp{
-    job:JobType
+    job:JobType,
+    index:number
 }
-function WorkTimeLine({job}:JobProp) {
-    
+function WorkTimeLine({job,index}:JobProp) {
   return (
     <div className="timeline-item">
     <div className="time-line"></div>
     <div className="circle">
       <i className="fas fa-briefcase"></i>
     </div>
-    <div className="card">
+    <div data-aos='fade-down' data-aos-duration={(index+1)*1000} className="card">
       <h3><i className="fa-solid fa-briefcase"></i><span className="title-job">{job.title}</span></h3>
       <h3 className='year'>
         <i className="fas fa-calendar-alt"></i>

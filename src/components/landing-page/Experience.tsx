@@ -27,10 +27,10 @@ function Experience() {
   ];
   return (
     <section id="experience">
-      <h1 className='title'>Work History</h1>
+      <h1 className="title">Work History</h1>
       <div className="timeline-container">
         {
-          jobs.map((j, i) => <WorkTimeLine key={i} job={j} />)
+          jobs.map((j, i) => <WorkTimeLine key={i} job={j} index={i}  />)
         }
       </div>
     </section>

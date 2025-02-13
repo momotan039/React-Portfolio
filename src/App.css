@@ -540,7 +540,6 @@ color: var(--main-color);
 }
 
 .portfolio-section .projects .project .thumbnail img {
-    background: url(images/tesla.png);
     background-position: bottom;
     background-size: cover;
     height: 100%;
@@ -661,7 +660,7 @@ color: var(--main-color);
 #services .card{
     width: 400px;
     padding-top: 0;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
 }
 #testimonials .card svg,
 #services .card svg{

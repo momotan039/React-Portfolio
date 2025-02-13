@@ -8,6 +8,16 @@ type ProjectType={
 }
     const projects: ProjectType[] = [
         {
+          title: 'Restaurant Café Food Theme',
+          thumbnail: 'images/Restaurant2.png',
+          preview: 'https://mohamad-taha.com/portfolio/wordpress/restaurant-wp',
+        },
+        {
+          title: 'Lunch Craft SaaS Theme',
+          thumbnail: 'images/Lunch_Craft.png',
+          preview: 'https://mohamad-taha.com/portfolio/wordpress/lunch_craft-wp',
+        },
+        {
           title: 'Recommended Shows App',
           thumbnail: 'images/recommended-Shows.png',
           preview: 'https://recommended-shows-mt.netlify.app',
@@ -23,9 +33,9 @@ type ProjectType={
           preview: 'https://shoes-store-mt.netlify.app/',
         },
         {
-          title: 'Musalsali Project',
+          title: 'Musalsali Movies Series Theme',
           thumbnail: 'images/musalsali%20Mockup.png',
-          preview: 'http://musalsali.byethost9.com/',
+          preview: 'https://mohamad-taha.com/portfolio/wordpress/musalsali/',
         },
         {
           title: 'Omega Academy',
@@ -63,12 +73,12 @@ type ProjectType={
                   <h1 className="title">My Projects</h1>
                 <div className="projects">
                    {
-                    projects.map((p)=>{
-                        return  <a target="_blank" href={p.preview}>
-                        <div className="project">
+                    projects.map((p,i)=>{
+                        return  <a key={i} target="_blank" href={p.preview}>
+                        <div data-aos='zoom-out-right' data-aos-duration={(i+1)*300} className="project">
                             <h3 className="title-project">{p.title}</h3>
                             <div className="thumbnail">
-                                <img src={p.thumbnail} />
+                                <img loading="lazy" src={p.thumbnail} />
                             </div>
                         </div>
                     </a>

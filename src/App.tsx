@@ -8,6 +8,7 @@ import Contact from './components/landing-page/Contact'
 import Experience from './components/landing-page/Experience'
 import Testimonials from './components/landing-page/Testimonials'
 import Services from './components/landing-page/Services'
+import AOSProvider from './components/AOSProvider'
 
 function App() {
   const onLoadApp=()=>{
@@ -83,7 +84,7 @@ function changeSelectedItemWhileScrolling(){
  onLoadApp()
  },[])
   return (
-    <>
+    <AOSProvider>
       <Header/>
       <About/>
       <Experience/>
@@ -92,7 +93,7 @@ function changeSelectedItemWhileScrolling(){
       <Projects/>
       <Services/>
       <Contact/>
-    </>
+    </AOSProvider>
   )
 }
 

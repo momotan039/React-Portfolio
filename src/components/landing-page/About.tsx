@@ -35,20 +35,20 @@ function changeRoleCharacters(){
 }
 
 useEffect(() => {
-  changeRoleCharacters()
+  changeRoleCharacters();
 }, [])
 
   return (
     <section id="about" className=" home-section container">
     <h1 className="title">About Me</h1>
     <div className="parent">
-        <div className="left">
+        <div data-aos="fade-right" className="left">
             <div className="image">
                 <img src="images/me.jpg" alt="Me"/>
             </div>
         </div>
-        <div className="right">
-            <h1>
+        <div data-aos="fade-left" className="right">
+            <h1 data-aos="flip-right" data-aos-duration="2000">
                 Hi 👋 I am <span>Mohammed </span>
                 A <span className="role">Full Stack</span>
                 <span> Developer</span>
@@ -60,7 +60,7 @@ useEffect(() => {
                 growth fuels my ability to tackle complex challenges. Moreover, I excel in collaborative environments, 
                 leveraging my team player mindset to drive success and support the mission of your innovative firm.
             </p>
-            <a className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
+            <a data-aos="fade-up" data-aos-duration="2000" className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
         </div>
     </div>
     {/* <ArrowLinks elementId='#skills'/> */}

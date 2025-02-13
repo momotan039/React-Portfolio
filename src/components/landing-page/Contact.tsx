@@ -12,20 +12,22 @@ function Contact() {
                   <h1 className="title">Contanct Me</h1>
                   <div className="parent">
                     <div className="keep-in-touch">
-                        <h1>Get in touch via mail</h1>
+                        <h1 data-aos='zoom-out-down'>Get in touch via mail</h1>
                         <form onSubmit={sendMail}>
-                            <div className="center">
+                           <div data-aos='zoom-out-left'>
+                           <div className="center">
                                 <input disabled  type="email" id="email" placeholder="Email" value={'momotaha039@gmail.com'}/>
                             </div>
                             <div className="center">
                                 <input required id="subject" placeholder="Subject" type="text"/>
                             </div>
                             <textarea required id="message" placeholder="Message" cols={30} rows={10}></textarea>
-                            <input className="btn" type="submit" value="Send Message"/>
+                           </div>
+                            <input data-aos='zoom-out-right' className="btn" type="submit" value="Send Message"/>
                         </form>
                     </div>
                     <hr/>
-                    <div className="contacts">
+                    <div data-aos='zoom-out-up' className="contacts">
                         <a target="_blank" href="https://github.com/momotan039">
                             <i className="fab fa-github-alt"></i>
                         </a>
