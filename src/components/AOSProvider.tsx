@@ -1,7 +1,12 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
+import { ReactNode } from "react"
+
 import AOS from "simple-aos";
 
-const AOSProvider = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+const AOSProvider = ({ children }: Props) => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration (ms)
