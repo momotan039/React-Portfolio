@@ -17,38 +17,6 @@ function Skills() {
           title:'Java Script',
           faIconClass:'fab fa-js'
         },
-      ]
-    }
-    const backEndSkills:skillBoxType=
-    {
-      term:'BackEnd',
-      skills:[
-        {
-          title:'.NET',
-          faIconClass:'fa-brands fa-adn'
-        },
-        {
-          title:'C#',
-          faIconClass:'fas fa-code'
-        },
-        {
-          title:'Php',
-          faIconClass:'fab fa-php'
-        },
-        {
-          title:'Node.js',
-          faIconClass:'fab fa-node-js'
-        },
-      ]
-    }
-    const frameWorksAndLibraries:skillBoxType=
-    {
-      term:'Frameworks & Libraries',
-      skills:[
-        {
-          title:'.NET',
-          faIconClass:'fa-brands fa-adn'
-        },
         {
           title:'Angular',
           faIconClass:'fab fa-angular'
@@ -75,27 +43,53 @@ function Skills() {
         },
       ]
     }
-    const mobileDevSkills:skillBoxType={
-        term:'Mobile Development',
-        skills:[
-          {
-            title:'Android',
-            faIconClass:'fab fa-android'
-          },
-          {
-            title:'Flutter',
-            image:'images/flutter.png'
-          }
-        ]
-      }
+    const backEndSkills:skillBoxType=
+    {
+      term:'BackEnd',
+      skills:[
+        {
+          title:'.NET',
+          faIconClass:'fa-brands fa-adn'
+        },
+        {
+          title:'C#',
+          faIconClass:'fas fa-code'
+        },
+        {
+          title:'Php',
+          faIconClass:'fab fa-php'
+        },
+        {
+          title:'Node.js',
+          faIconClass:'fab fa-node-js'
+        },
+        {
+          title:'Wordpress',
+          faIconClass:'fab fa-wordpress'
+        },
+      ]
+    }
+    // const mobileDevSkills:skillBoxType={
+    //     term:'Mobile Development',
+    //     skills:[
+    //       {
+    //         title:'Android',
+    //         faIconClass:'fab fa-android'
+    //       },
+    //       {
+    //         title:'Flutter',
+    //         image:'images/flutter.png'
+    //       }
+    //     ]
+    //   }
   return (
     <section id="skills" className="skills-section container">
     <h1 className="title">Skills</h1>
   <div className="content">
       <SkillBox skillsBox={frontEndSkills}/>
       <SkillBox skillsBox={backEndSkills}/>
-      <SkillBox skillsBox={frameWorksAndLibraries}/>
-      <SkillBox skillsBox={mobileDevSkills}/>
+      {/* <SkillBox skillsBox={frameWorksAndLibraries}/> */}
+      {/* <SkillBox skillsBox={mobileDevSkills}/> */}
   </div>
 </section>
   )

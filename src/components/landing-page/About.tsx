@@ -1,5 +1,10 @@
 import  { useEffect } from 'react'
 function About() {
+    const about=`I am a dedicated Full Stack Developer with experience in creating dynamic and efficient web applications.
+                Skilled in using technologies like MERN stack (MongoDB, Express, React, Node.js), .NET Core, Angular, WordPress, and PHP, 
+                I have a passion for building responsive, user-friendly interfaces and scalable back-end systems. 
+                I focus on writing clean, maintainable code and continuously improving my skills to deliver solutions that meet both user and business needs. 
+                I thrive on collaboration and am always eager to contribute to impactful projects.`;
 function changeRoleCharacters(){
     const roleElem=document.querySelector('#about .role')
     const roles=['Full Stack','Mern Stack','Frontend','Backend']
@@ -53,13 +58,7 @@ useEffect(() => {
                 A <span className="role">Full Stack</span>
                 <span> Developer</span>
             </h1>
-            <p>
-                I am an efficient self-learner with a positive attitude, motivated to 
-                continuously expand my skill set. I possess a deep understanding of the MERN stack and PHP WordPress. I 
-                have contributed to large scale and personal projects alike. My commitment to continuous learning and 
-                growth fuels my ability to tackle complex challenges. Moreover, I excel in collaborative environments, 
-                leveraging my team player mindset to drive success and support the mission of your innovative firm.
-            </p>
+            <p>{about}</p>
             <a data-aos="fade-up" data-aos-duration="2000" className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
         </div>
     </div>
