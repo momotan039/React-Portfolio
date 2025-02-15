@@ -478,7 +478,7 @@ width: 100%;
     border-radius: 10px;
     background-color: white;
     z-index: 1;
-    transition: all 1s;
+    transition: all 2s;
     width: 0;
 }
 .skills-section .content span.skill.fill::before{
