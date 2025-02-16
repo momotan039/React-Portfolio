@@ -59,7 +59,7 @@ useEffect(() => {
                 <span> Developer</span>
             </h1>
             <p>{about}</p>
-            <a data-aos="fade-up" data-aos-duration="2000" className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a>
+            {/* <a data-aos="fade-up" data-aos-duration="2000" className="btn" href="/cv/Mohammed Taha_CV.pdf" target="_blank">Download CV</a> */}
         </div>
     </div>
     {/* <ArrowLinks elementId='#skills'/> */}
