@@ -75,7 +75,7 @@ type ProjectType={
                    {
                     projects.map((p,i)=>{
                         return  <a key={i} target="_blank" href={p.preview}>
-                        <div data-aos='zoom-out-right' data-aos-duration={(i+1)*300} className="project">
+                        <div data-aos='fade-down-right' data-aos-duration={(i+1)*300} className="project">
                             <h3 className="title-project">{p.title}</h3>
                             <div className="thumbnail">
                                 <img loading="lazy" src={p.thumbnail} />

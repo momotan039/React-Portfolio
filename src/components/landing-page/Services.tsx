@@ -65,7 +65,7 @@ function Services() {
         <h1 className='title'>Services</h1>
         <div className="row">
                 {services.map((s,i) => {
-                    return <div data-aos='zoom-out-left' data-aos-duration={(i+1)*300} key={i} className="card">
+                    return <div data-aos='zoom-out-right' data-aos-duration={(i+1)*300} key={i} className="card">
                         <div className="head row">
                         <i className={s.icon}></i>
                                 <h1>{s.title}</h1>

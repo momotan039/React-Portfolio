@@ -12,9 +12,9 @@ function Contact() {
                   <h1 className="title">Contanct Me</h1>
                   <div className="parent">
                     <div className="keep-in-touch">
-                        <h1 data-aos='zoom-out-down'>Get in touch via mail</h1>
+                        <h1 data-aos='fade-down-right'>Get in touch via mail</h1>
                         <form onSubmit={sendMail}>
-                           <div data-aos='zoom-out-left'>
+                           <div data-aos='zoom-out-right'>
                            <div className="center">
                                 <input disabled  type="email" id="email" placeholder="Email" value={'momotaha039@gmail.com'}/>
                             </div>
@@ -27,7 +27,7 @@ function Contact() {
                         </form>
                     </div>
                     <hr/>
-                    <div data-aos='zoom-out-up' className="contacts">
+                    <div data-aos='fade-up-right' className="contacts">
                         <a target="_blank" href="https://github.com/momotan039">
                             <i className="fab fa-github-alt"></i>
                         </a>

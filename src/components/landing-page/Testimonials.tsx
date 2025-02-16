@@ -27,7 +27,7 @@ function Testimonials() {
             <h1 className="title">Testimonials</h1>
             <div className="row">
                 {testimonials.map((t,i) => {
-                    return <div data-aos='zoom-in-left' data-aos-duration={(i+1)*1000}  key={i} className="card">
+                    return <div data-aos='zoom-in-right' data-aos-duration={(i+1)*1000}  key={i} className="card">
                         <div className="head row">
                         <i className="fa-solid fa-star"></i>
                             <div>
