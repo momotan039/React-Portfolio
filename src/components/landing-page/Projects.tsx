@@ -35,7 +35,7 @@ type ProjectType={
         {
           title: 'Musalsali Movies Series Theme',
           thumbnail: 'images/musalsali%20Mockup.png',
-          preview: 'https://mohamad-taha.com/portfolio/wordpress/musalsali/',
+          preview: 'https://mohamad-taha.com/portfolio/wordpress/musalsali-wp/',
         },
         {
           title: 'Omega Academy',
